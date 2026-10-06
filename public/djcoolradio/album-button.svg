@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="260" viewBox="0 0 760 260">
+<rect x="2" y="2" width="756" height="256" rx="26" fill="#050506" fill-opacity=".96" stroke="#f6c848" stroke-width="4"/>
+<text x="730" y="61" text-anchor="end" fill="#f6c848" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="22">CURRENT ALBUM</text>
+<text x="730" y="112" text-anchor="end" fill="white" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="38">My Heart</text>
+<text x="730" y="153" text-anchor="end" fill="white" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="38">Was Full</text>
+<rect x="270" y="176" width="460" height="56" rx="18" fill="#0a0a0c" stroke="#f6c848" stroke-width="4"/>
+<path d="M295 190 L295 218 L320 204 Z" fill="#f6c848"/>
+<text x="705" y="211" text-anchor="end" fill="white" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="20">LISTEN NOW</text>
+</svg>

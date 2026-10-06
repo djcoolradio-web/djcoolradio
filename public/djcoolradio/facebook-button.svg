@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="150" viewBox="0 0 760 150">
+<rect x="2" y="2" width="756" height="146" rx="24" fill="#05122d" fill-opacity=".96" stroke="#3ca0ff" stroke-width="4"/>
+<text x="75" y="108" text-anchor="middle" fill="white" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="72">f</text>
+<line x1="135" y1="28" x2="135" y2="122" stroke="#96b4dc" stroke-width="2"/>
+<text x="170" y="62" fill="#b4d7ff" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="18">FOLLOW</text>
+<text x="170" y="104" fill="white" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="34">Facebook</text>
+<path d="M705 58l20 17-20 17" fill="none" stroke="white" stroke-width="5"/>
+</svg>
