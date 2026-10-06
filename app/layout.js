@@ -1,0 +1,5 @@
+const url='https://dj.fifm.ca';
+const title='Dj Sukhi Singh | djcoolradio | Music, Mixes & Bookings';
+const description='Explore music and DJ mixes by Edmonton artist Dj Sukhi Singh (djcoolradio). Listen to My Heart Was Full, view the gallery and enquire about DJ bookings.';
+export const metadata={title:{absolute:title},description,alternates:{canonical:url},robots:{index:true,follow:true},openGraph:{title,description,url,siteName:'djcoolradio',type:'website',locale:'en_CA',images:[{url:'/djcoolradio/album-art-official-card.jpg',alt:'My Heart Was Full by Dj Sukhi Singh — official album artwork'}]},twitter:{card:'summary',title,description,images:['/djcoolradio/album-art-official-card.jpg']}};
+export default function RootLayout({children}){return <html lang="en"><body style={{margin:0}}>{children}</body></html>}
