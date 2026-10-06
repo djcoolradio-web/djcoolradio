@@ -8,20 +8,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Import isolated DJ source and assets
+      - name: Import DJ production assets
         shell: bash
         run: |
           set -euo pipefail
-          tmp="$(mktemp -d)"
-          git clone --depth 1 --branch dj-production https://github.com/djcoolradio-web/find-it-for-me.git "$tmp/source"
-          mkdir -p app public
-          cp "$tmp/source/app/djcoolradio/page.js" app/page.js
-          cp "$tmp/source/app/djcoolradio/page.module.css" app/page.module.css
-          cp "$tmp/source/app/layout.js" app/layout.js
-          cp -R "$tmp/source/public/djcoolradio" public/djcoolradio
-          cat > package.json <<'JSON'
-          {"name":"djcoolradio","private":true,"scripts":{"dev":"next dev","build":"next build","start":"next start"},"dependencies":{"next":"16.3.3","react":"19.1.1","react-dom":"19.1.1"}}
-          JSON
+          mkdir -p public/djcoolradio
+          base="https://fifm.ca/djcoolradio"
+          for file in splash-background-LOCKED.png brand-header.svg album-button.svg promo.mp4 video-placeholder.webp mix-button.svg gallery31.webp gallery31-popup-480.jpg email-button.svg facebook-button.svg album-art-official-card.jpg mix-art-card.webp; do
+            curl --fail --location --retry 3 "$base/$file" --output "public/djcoolradio/$file"
+            test -s "public/djcoolradio/$file"
+          done
           cat > README.md <<'MD'
           # djcoolradio
           Independent production source for the official Dj Sukhi Singh / djcoolradio website.
@@ -30,5 +26,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Import independent DJ production site"
+          git commit -m "Import independent DJ production assets"
           git push origin HEAD:main
